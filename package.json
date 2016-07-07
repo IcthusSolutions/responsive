@@ -1,0 +1,22 @@
+{
+  "name": "SinglePageResponsive",
+  "version": "0.0.1",
+  "description": "A website that uses single page responsive CSS with Sass, Compass, Susy 2, etc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IcthusSolutions/responsive.git"
+  },
+  "author": "Andy Brooks",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "gulp-concat": "^2.6.0",
+    "gulp-browserify": "^0.5.1",
+    "jquery": "^3.0.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-connect": "^4.1.0",
+    "gulp-if": "^2.0.1",
+    "gulp-uglify": "^1.5.4",
+    "gulp-minify-html": "^1.0.6"
+  }
+}
