@@ -6,6 +6,8 @@ var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
     minifyHTML = require('gulp-minify-html'),
+    sass = require('gulp-ruby-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat');
     path = require('path');
 
@@ -16,7 +18,7 @@ var env,
     outputDir,
     sassStyle;
 
-env = 'development';
+env = 'production';
 
 if (env==='development') {
   outputDir = 'builds/development/';
@@ -52,6 +54,7 @@ gulp.task('compass', function() {
       css: outputDir + 'css',
       image: outputDir + 'images',
       style: sassStyle,
+      sourceComments: 'normal',
       require: ['susy', 'breakpoint']
     })
     .on('error', gutil.log))
